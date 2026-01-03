@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class</title>
+    <link rel="stylesheet" href="add_class.css">
+    <script src="add_class.js"></script>
+    <link rel="stylesheet" href="admin_web.css" type="text/css">
+    <script src="admin_web.js"></script>
+</head>
+<body>
+    <div class="h">
+        <div class="ch1"></div>
+        <div class="ch2">
+             <div><marquee>ADMIN Profile</marquee>
+             </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navbar">
+            <div class="n1">
+                <button onclick="check()">Check Attendance</button>
+            </div>
+            <div class="n2">
+                <button onclick="upcoming()">Upcoming Classes</button>
+            </div>
+            <div class="n3">
+                <button onclick="add()" style="background-color: white;color:black;border-radius:20px;">Add Class</button>
+            </div>
+            <div class="n4">
+                <button onclick="register()">Register</button>
+                
+            </div>
+            <div class="n5">
+                <button onclick="queries()">Queries</button>    
+            </div>
+        </div>
+    </div>
+    <div class="con">
+        <div class="outer">
+            <div class="inner">
+                    <div>
+                        <h1>ADD A CLASS </h1>
+                    </div>
+                    <form> 
+                    <div class="i1">
+                        <div>FACULTY NAME</div>
+                        <div><input type="text" name="fac_name" required></div>
+                    </div>
+                    <div class="i2">
+                                 
+                        <div>SUBJECT NAME</div>
+                        <div><input type="text" name="sub_name" required></div>
+                    </div>
+                    <div class="i3">
+                        <div>NO OF CLASSES</div>
+                        <div><input type="number" name="no_of_classes" required ></div>
+                    </div>
+                    <div class="i4">    
+                        <div>TIMINGS</div>
+                        <div>
+                            <select name="one" class="one">
+                                <option value="9:30">9:30-10:30</option>
+                                <option value="10:30">10:30-11:30</option>
+                                <option value="11:40">11:40-12:40</option>
+                                <option value="01:30">01:30-02:30</option>
+                                <option value="02:30">02:30-03:30</option>
+                                <option value="03:40">03:40-04:40</option>
+                        </select>    
+                        <select name="two" class="two hide">
+                                <option value="09:30">09:30-11:30</option>
+                                <option value="10:30">10:30-12:30</option>
+                                <option value="01:30">01:30-03:30</option>
+                                <option value="02:30">02:30-04:30</option>
+                        </select>
+                        <select name="three" class="three hide">
+                                <option value="09:30">09:30-12:30</option>
+                                <option value="01:30">01:30-04:30</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="i5">
+                    <div ><input type="submit" name="submit" class="submit" value="ADD" required></div>
+               </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
